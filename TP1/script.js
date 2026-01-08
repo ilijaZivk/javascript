@@ -95,7 +95,7 @@ while (index < eleves.length) {
 // Affichage du nombre d'élèves
 console.log("Nombre d'élèves admis :", nombreAdmis);
 
-// Partie Bonus
+// Partie 8
 
 // Calcul de la moyenne de la classe
 let sommeMoyennes = 0;
