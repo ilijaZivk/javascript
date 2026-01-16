@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(#1d1f43, #2e2727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.header {
+    color: #957db7;
+    font-size: 37px;
+}
+
+.page1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 3px solid #B5B5B5;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.rectangle {
+    background: linear-gradient(#191c45, #29085d);
+    padding: 15px;
+    width: 320px;
+    border-radius: 24px;
+}
+
+.inpradius {
+    background-color: #000000;
+    color: #ADADAD;
+    width: 100%;
+    padding: 10px;
+    padding-right: 0px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+}
+
+.skins-wrapper {
+    width: 340px;
+    max-height: 220px;
+    overflow-y: auto;
+    border: 2px solid #8F8FFF;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.skins-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 80px);
+    gap: 15px;
+}
+
+.skin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.skin img {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    border: 2px solid #8F8FFF;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.skin input {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.join-btn {
+    margin-top: 10px;
+    padding: 12px 40px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #8F8FFF;
+    cursor: pointer;
+    background-color: #111;
+    color: #8F8FFF;
+    transition: 0.2s;
+}
+
+.join-btn:hover {
+    background-color: #002244;
+}
+
+.skin.selected img {
+    border-color: #00aaff;
+    box-shadow: 0 0 10px #00aaff;
+}
