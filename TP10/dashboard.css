@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: radial-gradient(
+        circle at top,
+        #2b2b6e 0%,
+        rgb(21, 21, 94) 45%,
+        #060635 100%
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #eaeaea;
+}
+
+.portal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: -20%;
+}
+
+.portal h1 {
+    font-size: 36px;
+    color: #b71f1f;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background: linear-gradient(#191c45, #29085d);
+    padding: 20px;
+    width: 320px;
+
+    border-radius: 16px;
+    border: 3px solid #B5B5B5;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.div1 h1 {
+    text-align: center;
+    color: #d6b6b6;
+    margin-bottom: 10px;
+}
+
+.div1 label {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.div1 input {
+    background-color: #000;
+    color: #ADADAD;
+
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #444;
+
+    font-size: 14px;
+    outline: none;
+}
+
+.div1 input:focus {
+    border-color: #b71f1f;
+}
+
+#playBtn {
+    margin-top: 15px;
+    padding: 12px;
+
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #d6b6b6;
+
+    cursor: pointer;
+    background-color: #111;
+    color: #d6b6b6;
+
+    transition: 0.2s;
+}
+
+#playBtn:hover {
+    background-color: #2b2b6e;
+}
+
+.canvas-container {
+    margin-top: 10px;
+}
+
+#game {
+    border: 4px solid #b71f1f;
+    border-radius: 8px;
+
+    box-shadow:
+        0 0 15px rgba(255, 145, 77, 0.4),
+        0 0 40px rgba(0, 0, 0, 0.8);
+}

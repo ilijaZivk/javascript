@@ -43,14 +43,14 @@ for (let i = 1; i <= SKIN_COUNT; i++) {
 
 function joinGame() {
     const pseudo = document.getElementById("pseudo").value;
-    const backend = document.getElementById("backend").value;
-    if (!pseudo || !backend || !selectedSkin) {
+    const serverUrl = document.getElementById("serverUrl").value;
+    if (!pseudo || !serverUrl || !selectedSkin) {
         alert("Veuillez remplir tous les champs et choisir un skin");
         return;
     }
 
     localStorage.setItem("pseudo", pseudo);
-    localStorage.setItem("backend", backend);
+    localStorage.setItem("serverUrl", serverUrl);
     localStorage.setItem("skin", selectedSkin);
     window.location.href = "lobby.html";
 }

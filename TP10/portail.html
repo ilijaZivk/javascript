@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="portail.css">
+    <script src="portail.js"></script>
+    <title>TP10</title>
+</head>
+<body>
+    <div class="portal">
+    <h1>JS Arena</h1>
+    <div class="div1">
+        <h2>Entrer dans le jeu</h2>
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" placeholder="Entrez votre pseudo">
+        <label for="serverUrl">URL du Serveur</label>
+        <input
+            type="url"
+            id="serverUrl"
+            value="ws://13.38.137.68:8000/ws"
+        />
+        <button id="playBtn">Jouer</button>
+    </div>
+    <div class="canvas-container">
+        <canvas id="game" width="350" height="400"></canvas>
+    </div>
+    </div>
+</body>
+</html>
